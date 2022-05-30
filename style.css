@@ -10,3 +10,63 @@ body {
 }
 
 /* Add styles here! */
+body {
+  background-color: hsl(0deg, 0%, 50%);
+}
+header, main {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: .5rem solid hsl(0deg, 0%, 40%);
+}
+header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+main {
+  border-top: 5rem solid hsl(0deg, 0%, 50%);
+  width: 100%;
+}
+
+.max-width-wrapper {
+  margin: 2rem;
+  margin-top: 6rem;
+}
+
+.max-width-wrapper strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.max-width-wrapper .indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: .5rem solid hsl(45deg, 100%, 40%);
+  padding: 1rem;
+  margin-left: -2rem;
+  margin-top: -5.5rem;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .max-width-wrapper {
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
+
+  .max-width-wrapper .intro-chunk p {
+    max-width: 50rem;
+  }
+
+  .max-width-wrapper .indented-heading {
+    margin-left: -8.5rem;
+    width: fit-content;
+    margin-top: -1.5rem;
+  }
+
+  .max-width-wrapper .card p {
+    margin-left: -6rem;
+  }
+}
